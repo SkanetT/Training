@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     lazy var button = UIButton()
     lazy var box = UIView()
     lazy var switcher = UISwitch()
+    lazy var burgerButton = UIButton()
     
     let optionSize = 50
     let defaults = UserDefaults.standard
@@ -50,8 +51,24 @@ class ViewController: UIViewController {
             make.bottom.equalTo(box.snp.top).offset(-16)
         }
         
-        switcher.addTarget(self, action: #selector(changed(_:)), for: .valueChanged)
+        view.addSubview(burgerButton)
+        burgerButton.setTitle("Burger", for: .normal)
+        burgerButton.clipsToBounds = true
+        burgerButton.layer.cornerRadius = 8
+        burgerButton.layer.borderWidth = 1
+        burgerButton.layer.borderColor = UIColor.black.cgColor
+        burgerButton.backgroundColor = .darkGray
+        burgerButton.snp.makeConstraints() { make in
+            make.leading.equalTo(view.snp.leading).offset(24)
+            make.trailing.equalTo(view.snp.trailing).offset(-24)
+            make.top.equalTo(button.snp.bottom).offset(20)
+            make.height.equalTo(40)
+            
+            
+        }
         
+        switcher.addTarget(self, action: #selector(changed(_:)), for: .valueChanged)
+        burgerButton.addTarget(self, action: #selector(tapBurger), for: .touchUpInside)
         
         
        let color = defaults.string(forKey: "color")
@@ -73,6 +90,14 @@ class ViewController: UIViewController {
     @objc
     func tap() {
         let vc = SecondController()
+        let nc = UINavigationController(rootViewController: vc)
+        nc.modalPresentationStyle = .fullScreen
+        present(nc, animated: true)
+    }
+    
+    @objc
+    func tapBurger() {
+        let vc = BurgerController()
         let nc = UINavigationController(rootViewController: vc)
         nc.modalPresentationStyle = .fullScreen
         present(nc, animated: true)

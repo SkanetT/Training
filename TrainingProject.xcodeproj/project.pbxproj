@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F665C3D27BA343E577513D4 /* Pods_TrainingProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052205E2B02072F552D2C123 /* Pods_TrainingProject.framework */; };
+		3A18716424CF643A00B505FF /* BurgerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716324CF643A00B505FF /* BurgerHeader.swift */; };
+		3A18716624D0B7FB00B505FF /* FirstCellForBurger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716524D0B7FB00B505FF /* FirstCellForBurger.swift */; };
+		3A18716824D0BCB900B505FF /* DataImitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716724D0BCB900B505FF /* DataImitation.swift */; };
+		3A18716B24D0BFEF00B505FF /* FirstCellForBurger1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */; };
+		3A18716C24D0BFEF00B505FF /* FirstCellForBurger1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */; };
 		3A4ED89824CC4C08002275FB /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89724CC4C08002275FB /* SecondController.swift */; };
 		3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89924CC557D002275FB /* TableViewCell.swift */; };
 		3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED89A24CC557D002275FB /* TableViewCell.xib */; };
+		3A4ED89E24CF5E03002275FB /* BurgerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89D24CF5E03002275FB /* BurgerController.swift */; };
 		3A81488B24CC3FD400EFFC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81488A24CC3FD400EFFC55 /* AppDelegate.swift */; };
 		3A81488D24CC3FD400EFFC55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81488C24CC3FD400EFFC55 /* SceneDelegate.swift */; };
 		3A81488F24CC3FD400EFFC55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81488E24CC3FD400EFFC55 /* ViewController.swift */; };
@@ -22,9 +28,15 @@
 
 /* Begin PBXFileReference section */
 		052205E2B02072F552D2C123 /* Pods_TrainingProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18716324CF643A00B505FF /* BurgerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerHeader.swift; sourceTree = "<group>"; };
+		3A18716524D0B7FB00B505FF /* FirstCellForBurger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCellForBurger.swift; sourceTree = "<group>"; };
+		3A18716724D0BCB900B505FF /* DataImitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImitation.swift; sourceTree = "<group>"; };
+		3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCellForBurger1.swift; sourceTree = "<group>"; };
+		3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCellForBurger1.xib; sourceTree = "<group>"; };
 		3A4ED89724CC4C08002275FB /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		3A4ED89924CC557D002275FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A4ED89A24CC557D002275FB /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3A4ED89D24CF5E03002275FB /* BurgerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerController.swift; sourceTree = "<group>"; };
 		3A81488724CC3FD400EFFC55 /* TrainingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81488A24CC3FD400EFFC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A81488C24CC3FD400EFFC55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +70,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A4ED89F24CF5E57002275FB /* Burger */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED89D24CF5E03002275FB /* BurgerController.swift */,
+				3A18716324CF643A00B505FF /* BurgerHeader.swift */,
+				3A18716524D0B7FB00B505FF /* FirstCellForBurger.swift */,
+				3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */,
+				3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */,
+			);
+			path = Burger;
+			sourceTree = "<group>";
+		};
 		3A81487E24CC3FD400EFFC55 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +103,7 @@
 		3A81488924CC3FD400EFFC55 /* TrainingProject */ = {
 			isa = PBXGroup;
 			children = (
+				3A4ED89F24CF5E57002275FB /* Burger */,
 				3A81488A24CC3FD400EFFC55 /* AppDelegate.swift */,
 				3A81488C24CC3FD400EFFC55 /* SceneDelegate.swift */,
 				3A81488E24CC3FD400EFFC55 /* ViewController.swift */,
@@ -90,6 +115,7 @@
 				3A81489824CC3FDB00EFFC55 /* LaunchScreen.storyboard */,
 				3A81489B24CC3FDB00EFFC55 /* Info.plist */,
 				3A81489324CC3FD500EFFC55 /* TrainingProject.xcdatamodeld */,
+				3A18716724D0BCB900B505FF /* DataImitation.swift */,
 			);
 			path = TrainingProject;
 			sourceTree = "<group>";
@@ -163,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A18716C24D0BFEF00B505FF /* FirstCellForBurger1.xib in Resources */,
 				3A81489A24CC3FDB00EFFC55 /* LaunchScreen.storyboard in Resources */,
 				3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */,
 				3A81489724CC3FDB00EFFC55 /* Assets.xcassets in Resources */,
@@ -219,11 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4ED89E24CF5E03002275FB /* BurgerController.swift in Sources */,
 				3A81488F24CC3FD400EFFC55 /* ViewController.swift in Sources */,
+				3A18716624D0B7FB00B505FF /* FirstCellForBurger.swift in Sources */,
 				3A81488B24CC3FD400EFFC55 /* AppDelegate.swift in Sources */,
 				3A81488D24CC3FD400EFFC55 /* SceneDelegate.swift in Sources */,
+				3A18716B24D0BFEF00B505FF /* FirstCellForBurger1.swift in Sources */,
 				3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */,
+				3A18716424CF643A00B505FF /* BurgerHeader.swift in Sources */,
 				3A81489524CC3FD500EFFC55 /* TrainingProject.xcdatamodeld in Sources */,
+				3A18716824D0BCB900B505FF /* DataImitation.swift in Sources */,
 				3A4ED89824CC4C08002275FB /* SecondController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
