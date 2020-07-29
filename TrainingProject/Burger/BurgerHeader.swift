@@ -28,7 +28,7 @@ class BurgerHeader: UIView {
             make.top.equalTo(snp.top)
             make.leading.equalTo(snp.leading)
             make.trailing.equalTo(snp.trailing)
-            make.bottom.equalTo(snp.bottom).multipliedBy(0.5)
+            make.bottom.equalTo(snp.bottom).multipliedBy(0.5).offset(-20)
         }
         bottomView.backgroundColor = .white
         bottomView.snp.makeConstraints() { make in
@@ -46,7 +46,7 @@ class BurgerHeader: UIView {
             make.top.equalTo(snp.top).offset(8)
             make.leading.equalTo(snp.leading).offset(40)
             make.trailing.equalTo(snp.trailing).offset(-40)
-            make.bottom.equalTo(snp.bottom).offset(-8)
+            make.bottom.equalTo(snp.bottom).offset(-38)
 
 
         }

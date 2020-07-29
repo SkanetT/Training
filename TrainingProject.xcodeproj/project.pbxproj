@@ -13,6 +13,8 @@
 		3A18716824D0BCB900B505FF /* DataImitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716724D0BCB900B505FF /* DataImitation.swift */; };
 		3A18716B24D0BFEF00B505FF /* FirstCellForBurger1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */; };
 		3A18716C24D0BFEF00B505FF /* FirstCellForBurger1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */; };
+		3A18716F24D2093B00B505FF /* CollectionCellForFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18716D24D2093B00B505FF /* CollectionCellForFirst.swift */; };
+		3A18717024D2093B00B505FF /* CollectionCellForFirst.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18716E24D2093B00B505FF /* CollectionCellForFirst.xib */; };
 		3A4ED89824CC4C08002275FB /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89724CC4C08002275FB /* SecondController.swift */; };
 		3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89924CC557D002275FB /* TableViewCell.swift */; };
 		3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED89A24CC557D002275FB /* TableViewCell.xib */; };
@@ -33,6 +35,8 @@
 		3A18716724D0BCB900B505FF /* DataImitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImitation.swift; sourceTree = "<group>"; };
 		3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCellForBurger1.swift; sourceTree = "<group>"; };
 		3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCellForBurger1.xib; sourceTree = "<group>"; };
+		3A18716D24D2093B00B505FF /* CollectionCellForFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellForFirst.swift; sourceTree = "<group>"; };
+		3A18716E24D2093B00B505FF /* CollectionCellForFirst.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCellForFirst.xib; sourceTree = "<group>"; };
 		3A4ED89724CC4C08002275FB /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		3A4ED89924CC557D002275FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A4ED89A24CC557D002275FB /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				3A18716524D0B7FB00B505FF /* FirstCellForBurger.swift */,
 				3A18716924D0BFEF00B505FF /* FirstCellForBurger1.swift */,
 				3A18716A24D0BFEF00B505FF /* FirstCellForBurger1.xib */,
+				3A18716D24D2093B00B505FF /* CollectionCellForFirst.swift */,
+				3A18716E24D2093B00B505FF /* CollectionCellForFirst.xib */,
 			);
 			path = Burger;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 			files = (
 				3A18716C24D0BFEF00B505FF /* FirstCellForBurger1.xib in Resources */,
 				3A81489A24CC3FDB00EFFC55 /* LaunchScreen.storyboard in Resources */,
+				3A18717024D2093B00B505FF /* CollectionCellForFirst.xib in Resources */,
 				3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */,
 				3A81489724CC3FDB00EFFC55 /* Assets.xcassets in Resources */,
 				3A81489224CC3FD400EFFC55 /* Main.storyboard in Resources */,
@@ -252,6 +259,7 @@
 				3A81488B24CC3FD400EFFC55 /* AppDelegate.swift in Sources */,
 				3A81488D24CC3FD400EFFC55 /* SceneDelegate.swift in Sources */,
 				3A18716B24D0BFEF00B505FF /* FirstCellForBurger1.swift in Sources */,
+				3A18716F24D2093B00B505FF /* CollectionCellForFirst.swift in Sources */,
 				3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */,
 				3A18716424CF643A00B505FF /* BurgerHeader.swift in Sources */,
 				3A81489524CC3FD500EFFC55 /* TrainingProject.xcdatamodeld in Sources */,

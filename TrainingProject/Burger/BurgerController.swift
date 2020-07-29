@@ -68,7 +68,7 @@ extension BurgerController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         
         if indexPath.row == 0 {
-            tableView.rowHeight = 50
+            tableView.rowHeight = 130
             return firstCell
         } else {
             tableView.rowHeight = 250
@@ -84,7 +84,7 @@ extension BurgerController: UITableViewDelegate, UITableViewDataSource {
         return header
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
+        return 240
     }
     
 }
