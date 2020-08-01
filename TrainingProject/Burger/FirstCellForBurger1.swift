@@ -13,15 +13,17 @@ import Alamofire
 class FirstCellForBurger1: UITableViewCell {
     
     let descriptionArray = DataImitation.shared.arrayForFirstCell
+    let screenSize = UIScreen.main.bounds
+
     
-    @IBOutlet weak var colectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        colectionView.dataSource = self
-        colectionView.delegate = self
-        colectionView.register(UINib(nibName: "CollectionCellForFirst", bundle: nil), forCellWithReuseIdentifier: "CollectionCellForFirst")
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: "CollectionCellForFirst", bundle: nil), forCellWithReuseIdentifier: "CollectionCellForFirst")
         
     }
     

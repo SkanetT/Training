@@ -12,6 +12,8 @@ class BurgerController: UIViewController {
     
     lazy var tableView = UITableView(frame: .zero, style: .grouped)
     let header = BurgerHeader()
+    let screenSize = UIScreen.main.bounds
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,9 @@ class BurgerController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "test")
         tableView.register(UINib(nibName: "FirstCellForBurger1", bundle: nil), forCellReuseIdentifier: "FirstCellForBurger1")
+        
+        tableView.register(UINib(nibName: "SecondCellForBurger", bundle: nil), forCellReuseIdentifier: "SecondCellForBurger")
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart"), style: .plain, target: self, action: #selector(some))
         navigationItem.rightBarButtonItem?.tintColor = .black
@@ -35,7 +38,7 @@ class BurgerController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.barTintColor = .systemPurple
-
+        
         view.addSubview(tableView)
         tableView.backgroundColor = .systemPurple
         tableView.snp.makeConstraints() { make in
@@ -61,21 +64,29 @@ extension BurgerController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SecondCellForBurger", for: indexPath) as! SecondCellForBurger
         let firstCell = tableView.dequeueReusableCell(withIdentifier: "FirstCellForBurger1", for: indexPath) as! FirstCellForBurger1
-
-        cell.textLabel?.text = "asasas"
+        
+        firstCell.selectionStyle = .none
         cell.selectionStyle = .none
         
-        if indexPath.row == 0 {
-            tableView.rowHeight = 130
+        switch indexPath.row {
+        case 0:
+            tableView.rowHeight = screenSize.height * 0.25
             return firstCell
-        } else {
-            tableView.rowHeight = 250
+        case 1:
+            tableView.rowHeight = screenSize.height * 0.35
+            cell.headerLabel.text = "ТВОИ ЧЕЛЛЕНДЖИ"
+            return cell
+        case 2:
+            tableView.rowHeight = screenSize.height * 0.35
+            cell.headerLabel.text = "ГОРЯЩЕЕ ПРЕДЛОЖЕНИЕ"
+            return cell
+        default:
             return cell
         }
         
-      //  return cell
+        
         
     }
     
@@ -84,7 +95,7 @@ extension BurgerController: UITableViewDelegate, UITableViewDataSource {
         return header
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 240
+        return screenSize.height * 0.3
     }
     
 }

@@ -13,14 +13,11 @@ class BurgerHeader: UIView {
     lazy var topView = UIView()
     lazy var bottomView = UIView()
     lazy var card = UIView()
-
-
+    lazy var labelCard = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-    //    backgroundColor = .systemPurple
-        
+                
         addSubview(topView)
         addSubview(bottomView)
         topView.backgroundColor = .systemPurple
@@ -47,9 +44,9 @@ class BurgerHeader: UIView {
             make.leading.equalTo(snp.leading).offset(40)
             make.trailing.equalTo(snp.trailing).offset(-40)
             make.bottom.equalTo(snp.bottom).offset(-38)
-
-
         }
+        
+        bottomView.addSubview(labelCard)
         
     }
     
