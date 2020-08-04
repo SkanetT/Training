@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     lazy var box = UIView()
     lazy var switcher = UISwitch()
     lazy var burgerButton = UIButton()
+    lazy var podcastButton = UIButton()
     
     let optionSize = 50
     let defaults = UserDefaults.standard
@@ -67,24 +68,40 @@ class ViewController: UIViewController {
             
         }
         
+        view.addSubview(podcastButton)
+        podcastButton.setTitle("Podcasts", for: .normal)
+        podcastButton.clipsToBounds = true
+        podcastButton.layer.cornerRadius = 8
+        podcastButton.layer.borderWidth = 1
+        podcastButton.layer.borderColor = UIColor.black.cgColor
+        podcastButton.backgroundColor = .darkGray
+        podcastButton.snp.makeConstraints() { make in
+            make.leading.equalTo(view.snp.leading).offset(24)
+            make.trailing.equalTo(view.snp.trailing).offset(-24)
+            make.top.equalTo(burgerButton.snp.bottom).offset(8)
+            make.height.equalTo(40)
+        }
+        
         switcher.addTarget(self, action: #selector(changed(_:)), for: .valueChanged)
         burgerButton.addTarget(self, action: #selector(tapBurger), for: .touchUpInside)
+        podcastButton.addTarget(self, action: #selector(tapPodcasts), for: .touchUpInside)
+
         
         
-       let color = defaults.string(forKey: "color")
+        let color = defaults.string(forKey: "color")
         
         if color == nil {
             defaults.set("white", forKey: "color")
         } else {
             if color == "white" {
                 switcher.setOn(false, animated: true)
-
+                
             } else {
                 switcher.setOn(true, animated: true)
-
+                
             }
         }
-    
+        
     }
     
     @objc
@@ -104,11 +121,19 @@ class ViewController: UIViewController {
     }
     
     @objc
+       func tapPodcasts() {
+           let vc = PodcastsController()
+           let nc = UINavigationController(rootViewController: vc)
+           nc.modalPresentationStyle = .fullScreen
+           present(nc, animated: true)
+       }
+    
+    @objc
     func changed(_ switch1: UISwitch) {
         if switch1.isOn {
-             defaults.set("white", forKey: "color")
+            defaults.set("white", forKey: "color")
         } else {
-             defaults.set("black", forKey: "color")
+            defaults.set("black", forKey: "color")
         }
     }
 }

@@ -19,6 +19,10 @@
 		3A18717424D35B1600B505FF /* SecondCellForBurger.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18717224D35B1600B505FF /* SecondCellForBurger.xib */; };
 		3A18717724D3655B00B505FF /* CollectionCellForSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18717524D3655B00B505FF /* CollectionCellForSecond.swift */; };
 		3A18717824D3655B00B505FF /* CollectionCellForSecond.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18717624D3655B00B505FF /* CollectionCellForSecond.xib */; };
+		3A18717E24D5DFD700B505FF /* PodcastsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18717C24D5DFD700B505FF /* PodcastsController.swift */; };
+		3A18717F24D5DFD700B505FF /* PodcastsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18717D24D5DFD700B505FF /* PodcastsController.xib */; };
+		3A18718224D88ECE00B505FF /* CollectionCellForPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18718024D88ECE00B505FF /* CollectionCellForPodcast.swift */; };
+		3A18718324D88ECE00B505FF /* CollectionCellForPodcast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A18718124D88ECE00B505FF /* CollectionCellForPodcast.xib */; };
 		3A4ED89824CC4C08002275FB /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89724CC4C08002275FB /* SecondController.swift */; };
 		3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED89924CC557D002275FB /* TableViewCell.swift */; };
 		3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED89A24CC557D002275FB /* TableViewCell.xib */; };
@@ -45,6 +49,10 @@
 		3A18717224D35B1600B505FF /* SecondCellForBurger.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCellForBurger.xib; sourceTree = "<group>"; };
 		3A18717524D3655B00B505FF /* CollectionCellForSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellForSecond.swift; sourceTree = "<group>"; };
 		3A18717624D3655B00B505FF /* CollectionCellForSecond.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCellForSecond.xib; sourceTree = "<group>"; };
+		3A18717C24D5DFD700B505FF /* PodcastsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsController.swift; sourceTree = "<group>"; };
+		3A18717D24D5DFD700B505FF /* PodcastsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastsController.xib; sourceTree = "<group>"; };
+		3A18718024D88ECE00B505FF /* CollectionCellForPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellForPodcast.swift; sourceTree = "<group>"; };
+		3A18718124D88ECE00B505FF /* CollectionCellForPodcast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCellForPodcast.xib; sourceTree = "<group>"; };
 		3A4ED89724CC4C08002275FB /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		3A4ED89924CC557D002275FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A4ED89A24CC557D002275FB /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -80,6 +88,17 @@
 				052205E2B02072F552D2C123 /* Pods_TrainingProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A18717924D5D4CE00B505FF /* Podcasts */ = {
+			isa = PBXGroup;
+			children = (
+				3A18717C24D5DFD700B505FF /* PodcastsController.swift */,
+				3A18718024D88ECE00B505FF /* CollectionCellForPodcast.swift */,
+				3A18718124D88ECE00B505FF /* CollectionCellForPodcast.xib */,
+				3A18717D24D5DFD700B505FF /* PodcastsController.xib */,
+			);
+			path = Podcasts;
 			sourceTree = "<group>";
 		};
 		3A4ED89F24CF5E57002275FB /* Burger */ = {
@@ -121,6 +140,7 @@
 		3A81488924CC3FD400EFFC55 /* TrainingProject */ = {
 			isa = PBXGroup;
 			children = (
+				3A18717924D5D4CE00B505FF /* Podcasts */,
 				3A4ED89F24CF5E57002275FB /* Burger */,
 				3A81488A24CC3FD400EFFC55 /* AppDelegate.swift */,
 				3A81488C24CC3FD400EFFC55 /* SceneDelegate.swift */,
@@ -208,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A18716C24D0BFEF00B505FF /* FirstCellForBurger1.xib in Resources */,
+				3A18717F24D5DFD700B505FF /* PodcastsController.xib in Resources */,
 				3A81489A24CC3FDB00EFFC55 /* LaunchScreen.storyboard in Resources */,
 				3A18717024D2093B00B505FF /* CollectionCellForFirst.xib in Resources */,
+				3A18718324D88ECE00B505FF /* CollectionCellForPodcast.xib in Resources */,
 				3A18717824D3655B00B505FF /* CollectionCellForSecond.xib in Resources */,
 				3A4ED89C24CC557D002275FB /* TableViewCell.xib in Resources */,
 				3A81489724CC3FDB00EFFC55 /* Assets.xcassets in Resources */,
@@ -274,8 +296,10 @@
 				3A81488B24CC3FD400EFFC55 /* AppDelegate.swift in Sources */,
 				3A81488D24CC3FD400EFFC55 /* SceneDelegate.swift in Sources */,
 				3A18716B24D0BFEF00B505FF /* FirstCellForBurger1.swift in Sources */,
+				3A18717E24D5DFD700B505FF /* PodcastsController.swift in Sources */,
 				3A18717724D3655B00B505FF /* CollectionCellForSecond.swift in Sources */,
 				3A18716F24D2093B00B505FF /* CollectionCellForFirst.swift in Sources */,
+				3A18718224D88ECE00B505FF /* CollectionCellForPodcast.swift in Sources */,
 				3A4ED89B24CC557D002275FB /* TableViewCell.swift in Sources */,
 				3A18716424CF643A00B505FF /* BurgerHeader.swift in Sources */,
 				3A81489524CC3FD500EFFC55 /* TrainingProject.xcdatamodeld in Sources */,

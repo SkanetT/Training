@@ -20,9 +20,7 @@ class SecondCellForBurger: UITableViewCell {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "CollectionCellForSecond", bundle: nil), forCellWithReuseIdentifier: "CollectionCellForSecond")
-        
     }
-
 }
 
 extension SecondCellForBurger: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
